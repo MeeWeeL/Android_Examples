@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".mainFragment.MainFragment">
+
+    <Button
+        android:id="@+id/btn_network_questions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сетевые запросы"
+        android:layout_margin="20dp"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_async_tasks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Многопоточность"
+        android:layout_margin="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_network_questions"/>
+
+    <Button
+        android:id="@+id/btn_animations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Анимации"
+        android:layout_margin="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_async_tasks"/>
+
+    <Button
+        android:id="@+id/btn_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Кнопки"
+        android:layout_margin="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_animations"/>
+
+    <Button
+        android:id="@+id/btn_dialogs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Диалоги"
+        android:layout_margin="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_buttons"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
