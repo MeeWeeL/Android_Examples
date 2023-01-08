@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Button
+        android:id="@+id/thread"
+        style="@style/listButtonStyle"
+        android:text="Thread"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/rx"
+        style="@style/listButtonStyle"
+        android:text="RxJava"
+        app:layout_constraintTop_toBottomOf="@id/thread"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/coroutines"
+        style="@style/listButtonStyle"
+        android:text="Coroutines"
+        app:layout_constraintTop_toBottomOf="@id/rx"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

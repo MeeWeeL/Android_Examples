@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.annotation.RequiresApi
-import com.meeweel.androidexamples.mainFragment.networkQuestions.BaseExampleFragment
+import com.meeweel.androidexamples.base.BasePagerExampleFragment
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
 import io.reactivex.rxjava3.core.Single
 import io.reactivex.rxjava3.schedulers.Schedulers
@@ -19,7 +19,7 @@ import retrofit2.http.Query
 import java.net.URL
 import java.util.concurrent.TimeUnit
 
-class Example_03_OkHttpAndRetrofit : BaseExampleFragment() {
+class Example_03_OkHttpAndRetrofit : BasePagerExampleFragment() {
 
 
     private var counter = 1
@@ -28,7 +28,7 @@ class Example_03_OkHttpAndRetrofit : BaseExampleFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.btn.setOnClickListener {
+        binding.btn2.setOnClickListener {
 
             val url = URL("https://anilist.pserver.ru/")
 

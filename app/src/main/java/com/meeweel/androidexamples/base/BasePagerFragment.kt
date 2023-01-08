@@ -1,4 +1,4 @@
-package com.meeweel.androidexamples.mainFragment
+package com.meeweel.androidexamples.base
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.meeweel.androidexamples.databinding.FragmentBasePagerBinding
 
-abstract class BaseCategoryFragment : Fragment() {
+abstract class BasePagerFragment : Fragment() {
 
     private var _binding: FragmentBasePagerBinding? = null
     private val binding get() = _binding!!

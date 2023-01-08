@@ -34,6 +34,10 @@ class MainFragment : Fragment() {
             Navigation.findNavController(requireActivity(), R.id.nav_host_fragment_main_container)
                 .navigate(R.id.action_mainFragment_to_dialogsFragment)
         }
+        binding.btnAsyncTasks.setOnClickListener {
+            Navigation.findNavController(requireActivity(), R.id.nav_host_fragment_main_container)
+                .navigate(R.id.action_mainFragment_to_asyncFragment)
+        }
     }
 
     override fun onDestroy() {

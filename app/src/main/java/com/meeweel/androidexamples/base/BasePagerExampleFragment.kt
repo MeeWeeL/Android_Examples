@@ -1,15 +1,15 @@
-package com.meeweel.androidexamples.mainFragment.networkQuestions
+package com.meeweel.androidexamples.base
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.meeweel.androidexamples.databinding.FragmentNetworkQuestionExampleBinding
+import com.meeweel.androidexamples.databinding.FragmentPagerExampleBinding
 
-open class BaseExampleFragment : Fragment() {
+open class BasePagerExampleFragment : Fragment() {
 
-    private var _binding: FragmentNetworkQuestionExampleBinding? = null
+    private var _binding: FragmentPagerExampleBinding? = null
     internal val binding get() = _binding!!
 
     override fun onCreateView(
@@ -17,7 +17,8 @@ open class BaseExampleFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = _binding ?: FragmentNetworkQuestionExampleBinding.inflate(inflater, container, false)
+        _binding =
+            _binding ?: FragmentPagerExampleBinding.inflate(inflater, container, false)
         return binding.root
     }
 

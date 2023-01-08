@@ -12,19 +12,52 @@
         tools:layout="@layout/fragment_main">
         <action
             android:id="@+id/action_mainFragment_to_networkQuestionsFragment"
-            app:destination="@id/networkQuestionsFragment" />
+            app:destination="@id/networkQuestionsFragment"
+            app:enterAnim="@anim/updown_slide_in"
+            app:exitAnim="@anim/alfa_out"
+            app:popEnterAnim="@anim/alfa_in"
+            app:popExitAnim="@anim/updown_slide_out" />
         <action
             android:id="@+id/action_mainFragment_to_dialogsFragment"
-            app:destination="@id/dialogsFragment" />
+            app:destination="@id/dialogsFragment"
+            app:enterAnim="@anim/updown_slide_in"
+            app:exitAnim="@anim/alfa_out"
+            app:popEnterAnim="@anim/alfa_in"
+            app:popExitAnim="@anim/updown_slide_out" />
+        <action
+            android:id="@+id/action_mainFragment_to_asyncFragment"
+            app:destination="@id/asyncFragment"
+            app:enterAnim="@anim/updown_slide_in"
+            app:exitAnim="@anim/alfa_out"
+            app:popEnterAnim="@anim/alfa_in"
+            app:popExitAnim="@anim/updown_slide_out"/>
     </fragment>
     <fragment
         android:id="@+id/networkQuestionsFragment"
         android:name="com.meeweel.androidexamples.mainFragment.networkQuestions.NetworkQuestionsFragment"
         android:label="NetworkQuestionsFragment"
-        tools:layout="@layout/fragment_network_question_example"/>
+        tools:layout="@layout/fragment_pager_example"/>
     <fragment
         android:id="@+id/dialogsFragment"
         android:name="com.meeweel.androidexamples.mainFragment.dialogs.DialogsFragment"
         android:label="DialogsFragment"
         tools:layout="@layout/fragment_dialogs"/>
+    <fragment
+        android:id="@+id/asyncFragment"
+        android:name="com.meeweel.androidexamples.mainFragment.async.AsyncFragment"
+        android:label="AsyncFragment"
+        tools:layout="@layout/fragment_async">
+        <action
+            android:id="@+id/action_asyncFragment_to_coroutinesFragment"
+            app:destination="@id/coroutinesFragment"
+            app:enterAnim="@anim/updown_slide_in"
+            app:exitAnim="@anim/alfa_out"
+            app:popEnterAnim="@anim/alfa_in"
+            app:popExitAnim="@anim/updown_slide_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/coroutinesFragment"
+        android:name="com.meeweel.androidexamples.mainFragment.async.coroutines.CoroutinesFragment"
+        android:label="CoroutinesFragment"
+        tools:layout="@layout/fragment_pager_example"/>
 </navigation>

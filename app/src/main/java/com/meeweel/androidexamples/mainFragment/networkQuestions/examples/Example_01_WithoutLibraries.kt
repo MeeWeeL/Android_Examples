@@ -6,14 +6,14 @@ import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.annotation.RequiresApi
-import com.meeweel.androidexamples.mainFragment.networkQuestions.BaseExampleFragment
+import com.meeweel.androidexamples.base.BasePagerExampleFragment
 import java.io.BufferedReader
 import java.io.InputStreamReader
 import java.net.URL
 import java.util.stream.Collectors
 import javax.net.ssl.HttpsURLConnection
 
-class Example_01_WithoutLibraries : BaseExampleFragment() {
+class Example_01_WithoutLibraries : BasePagerExampleFragment() {
 
     private var counter = 1
 
@@ -21,7 +21,7 @@ class Example_01_WithoutLibraries : BaseExampleFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.btn.setOnClickListener {
+        binding.btn2.setOnClickListener {
 
             val uri = URL("https://anilist.pserver.ru/api.php?q=animeTitleEn&id=${counter++}")
             Thread {

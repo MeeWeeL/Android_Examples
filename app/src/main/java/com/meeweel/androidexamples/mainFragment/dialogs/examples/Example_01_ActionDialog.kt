@@ -1,6 +1,5 @@
 package com.meeweel.androidexamples.mainFragment.dialogs.examples
 
-import android.content.DialogInterface
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
@@ -13,7 +12,7 @@ class Example_01_ActionDialog : BaseExampleFragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.title.text = "ActionDialog"
-        binding.btn.setOnClickListener {
+        binding.btn2.setOnClickListener {
             val dialog = AlertDialog.Builder(requireContext())
                 .setTitle("AlertDialog title")
                 .setMessage("AlertDialog message")
@@ -29,6 +28,6 @@ class Example_01_ActionDialog : BaseExampleFragment() {
     }
 
     private fun toast(text: String) {
-        Toast.makeText(requireContext(), "Yes", Toast.LENGTH_SHORT).show()
+        Toast.makeText(requireContext(), text, Toast.LENGTH_SHORT).show()
     }
 }
